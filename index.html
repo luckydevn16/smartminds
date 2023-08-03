@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartminds 2022</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/fonts/tahoma/stylesheet.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header class="header flex space-between">
+            <div class="menu-button flex center align-center">
+                <div class="menu-button-burger"></div>
+            </div>
+            <img src="assets/img/svg/logo-black.svg" alt="logo-black" class="header-logo-img" onclick="scrollToElem('.main'), closeMenu()" loading="lazy">
+            <div class="header-promo" onclick="scrollToElem('.form'), closeMenu()">
+                empezar ahora
+            </div>
+        </header>
+        <div class="menu-wrapper">
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-list-item" onclick="scrollToElem('.section-about'), closeMenu()">Sobre nosotros</li>
+                    <li class="nav-list-item" onclick="scrollToElem('.section-benefits'), closeMenu()">Nuestros beneficios</li>
+                    <li class="nav-list-item" onclick="scrollToElem('.section-offers'), closeMenu()">Nuestras ofertas</li>
+                    <li class="nav-list-item" onclick="scrollToElem('.section-lower-form'), closeMenu()">Contacto</li>
+                </ul>
+            </nav>
+        </div>
+        <main class="main">
+            <section class="section-hero">
+                <div class="container flex space-between">
+                    <div class="hero-video-wrapper">
+                        <h1 class="main-heading">
+                            Aprende. Gana. Vive: <span class="colored-text">competencia financiera  para avanzar</span>
+                        </h1>
+                        <div class="video">
+                            <video width="100%" controls controlsList="nodownload" playsinline poster="assets/video/poster.png"></video>
+                            <div class="play-btn"></div>
+                        </div>
+                    </div>
+                    <div class="hero-form-wrapper">
+                        <div class="form">
+                            <h2 class="form-heading">
+                                Regístrate para conseguir mejores hábitos de dinero
+                            </h2>
+                            <form action="thankyou.html" onsubmit="event.preventDefault(); formSubmission()">
+                                <p class="form-disclaimer" style="font-size:12px;line-height:1.4;text-align:center">
+                                    *This form is here only for layout demonstration. The entered data is not sent anywhere.
+                                </p>
+                                <div class="input-wrap">
+                                    <input type="text" class="form-input name" placeholder="Su nombre">
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" class="form-input lastname" placeholder="Tu apellido">
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" class="form-input email" placeholder="Tu correo electrónico">
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" class="form-input phone" placeholder="Su número de teléfono">
+                                </div>
+                                <div class="required-fields">
+                                    Porfavor llene todos los campos
+                                </div>
+                                <div class="input-wrap">
+                                    <button class="btn alert-btn">Obtenga acceso ahora*</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-rect-decor"></div>
+            </section>
+            <section class="section-about">
+                <div class="container flex space-between">
+                    <div class="about-img-wrapper flex align-center center">
+                        <img src="assets/img/about-img.png" alt="smartminds" class="about-img" loading="lazy">
+                        <img src="assets/img/svg/logo-about.svg" class="about-logo-img" loading="lazy">
+                    </div>
+                    <div class="about-text-wrapper">
+                        <h3 class="about-heading">
+                            Amplía tu aprendizaje para obtener mejores resultados
+                        </h3>
+                        <p class="text">
+                            Cuando se trata de invertir con éxito, esta es la fórmula que funciona: opera como un profesional con SmartMinds.  La plataforma de SmartMinds ha hecho posible que la educación financiera sea accesible para todos los españoles en un par de clics. Es un sistema de trading automático confiable que aplica tecnologías avanzadas para garantizar un ambiente comercial transparente, desarrollar tus habilidades comerciales y crear la cartera de inversión más atractiva. Además, no tienes que preocuparte por los impuestos, nosotros asumimos los gastos financieros relacionados con ellos. SmartMinds se adhiere en su trabajo al principio " ganas mientras aprendes". Una amplia gama de soluciones educativas en la plataforma te ayuda a absorber rápidamente todos los conocimientos necesarios y ponerlos en práctica.  Como resultado de esto, serás capaz de operar con confianza con SmartMinds para generar ganancias masivas diariamente. Incluso si nunca has operado antes y no sabes nada de los mercados financieros, con SmartMinds definitivamente puedes tener éxito. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-benefits">
+                <div class="container flex space-between">
+                    <div class="benefits-heading-block flex center align-center">
+                        Aquí hay algunos hechos por los que las personas eligen SmartMinds:
+                    </div>
+                    <div class="benefits-cards-wrapper flex space-between">
+                        <div class="benefits-card first flex">
+                            <img src="assets/img/svg/receipt.svg" alt="receipt" loading="lazy">
+                            <div class="card-content">
+                                <h3 class="card-heading">
+                                    Entorno comercial y cobertura fiscal
+                                </h3>
+                                <p class="text">
+                                    ¡SmartMinds le brinda un buen comienzo, ya que le brinda todas las herramientas y conocimientos necesarios y cubre todos los impuestos que surjan en el camino!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="benefits-card">
+                            <h3 class="card-heading">
+                                Eventos y noticias del mercado
+                            </h3>
+                            <p class="text">
+                                Le ayudamos a mantener el pulso del mundo financiero y a tomar las decisiones comerciales correctas.
+                            </p>
+                        </div>
+                        <div class="benefits-card">
+                            <h3 class="card-heading">
+                                Materiales de aprendizaje poderosos
+                            </h3>
+                            <p class="text">
+                                Nuestro enfoque es ayudarlo a desarrollar las habilidades necesarias para invertir con éxito en los mercados financieros.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn" onclick="scrollToElem('.section-lower-form')">empezar ahora</button>
+            </section>
+            <section class="section-expert">
+                <div class="container flex">
+                    <div class="expert-video-wrapper">
+                        <video src="assets/video/victor.mp4" muted autoplay loop></video>
+                        <img src="assets/img/svg/expert-tag.svg" alt="tag" class="expert-tag" loading="lazy">
+                    </div>
+                    <div class="expert-text-wrapper">
+                        <h3 class="about-heading flex space-between align-center">
+                            Víctor Domínguez
+                            <img src="assets/img/yt-logo.png" alt="you-tube-channel" loading="lazy">
+                        </h3>
+                        <p class="text">
+                            “¡Hola! Soy Víctor Domínguez. Me enorgullece decir que soy uno de los pocos que ha hecho una carrera fantástica como inversor. También tengo éxito como entrenador  por una razón sorprendentemente rara: me encanta compartir los secretos de mis mayores ganadores en el trading. Entonces, ¿qué te convierte en un trader afortunado?  Para mí la respuesta es simple: aprendizaje. Déjame explicarte por qué. El trading no es una actividad para hacerse rico rápidamente. Para obtener una rentabilidad constante en el mercado, debe tratar el trading como un negocio, que es necesario construir y desarrollar.  Para lograrlo, tienes que aprender sin parar. Pero aprende con las herramientas adecuadas. Mi elección es SmartMinds, una plataforma educativa online que te ofrece contenido oportuno y confiable cuando lo necesitas. Siendo un inversor exitoso, sigo usando SmartMinds para pulir mis conocimientos financieros casi todos los días. ¡Eso no es ni la mitad! En cuanto te sientas seguro, también puedes invertir eficazmente con <span class="colored-text">SmartMinds, ya que tiene un ambiente comercial bien desarrollado. <br>
+                            Entonces, ¡actúa ahora mismo! ¡Regístrate y aumenta tus ganancias con un par de clics!”</span>
+                        </p>
+                    </div>
+                </div>
+                <img src="assets/img/svg/logo-large.svg" alt="decor" class="expert-decor left" loading="lazy">
+                <img src="assets/img/svg/logo-large.svg" alt="decor" class="expert-decor right" loading="lazy">
+            </section>
+            <section class="section-offers">
+                <h2 class="section-heading">
+                    elige tu camino
+                </h2>
+                <div class="container flex space-between">
+                    <div class="offer-card">
+                        <div class="offer-card-content">
+                            <div class="heading-wrapper flex align-center">
+                                <img src="assets/img/svg/shield.svg" alt="shield" loading="lazy">
+                                <h3 class="card-heading">
+                                    Programa Básico Estándar
+                                </h3>
+                            </div>
+                            <div class="img-wrapper">
+                                <img src="assets/img/offer-001.png" alt="offer" class="offer-card-img" loading="lazy">
+                            </div>
+                            <p class="offer-description">
+                                Aprenda los conceptos básicos de trading
+                            </p>
+                        </div>
+                        <div class="offer-card-profit">
+                            ¡Obtén 
+                            <span class="colored-text">
+                                <span class="counter" data-to="10" data-stop="0">10</span>%
+                            </span> de ganancias mensuales!
+                        </div>
+                        <div class="offer-btn-wrapper">
+                            <button class="btn" onclick="scrollToElem('.section-lower-form')">
+                                Obtén la oferta
+                            </button>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-card-content">
+                            <div class="heading-wrapper flex align-center">
+                                <img src="assets/img/svg/shield.svg" alt="shield" loading="lazy">
+                                <h3 class="card-heading">
+                                    Programa Completo
+                                </h3>
+                            </div>
+                            <div class="img-wrapper">
+                                <img src="assets/img/offer-002.png" alt="offer" class="offer-card-img" loading="lazy">
+                            </div>
+                            <p class="offer-description">
+                                Tu programa comercial completo de SmartMinds
+                            </p>
+                        </div>
+                        <div class="offer-card-profit">
+                            ¡Obtén 
+                            <span class="colored-text">
+                                <span class="counter" data-to="14" data-stop="0">14</span>%
+                            </span> de ganancias mensuales!
+                        </div>
+                        <div class="offer-btn-wrapper">
+                            <button class="btn" onclick="scrollToElem('.section-lower-form')">
+                                Obtén la oferta
+                            </button>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-card-content">
+                            <div class="heading-wrapper flex align-center">
+                                <img src="assets/img/svg/shield.svg" alt="shield" loading="lazy">
+                                <h3 class="card-heading">
+                                    Programa "Opera como un profesional"
+                                </h3>
+                            </div>
+                            <div class="img-wrapper">
+                                <img src="assets/img/offer-003.png" alt="offer" class="offer-card-img" loading="lazy">
+                            </div>
+                            <p class="offer-description">
+                                Potencia tu trading con SmartMinds
+                            </p>
+                        </div>
+                        <div class="offer-card-profit">
+                            ¡Obtén 
+                            <span class="colored-text">
+                                <span class="counter" data-to="21" data-stop="0">21</span>%
+                            </span> de ganancias mensuales!
+                        </div>
+                        <div class="offer-btn-wrapper">
+                            <button class="btn" onclick="scrollToElem('.section-lower-form')">
+                                Obtén la oferta
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-lower-form">
+                <div class="lower-form-overlay"></div>
+                <div class="container form">
+                    <form action="thankyou.html" onsubmit="event.preventDefault(); formSubmission()">
+                        <p class="form-disclaimer" style="font-size:12px;line-height:1.4;text-align:center">
+                            *This form is here only for layout demonstration. The entered data is not sent anywhere.
+                        </p>
+                        <div class="input-wrap">
+                            <input type="text" class="form-input name" placeholder="Su nombre">
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" class="form-input lastname" placeholder="Tu apellido">
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" class="form-input email" placeholder="Tu correo electrónico">
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" class="form-input phone" placeholder="Su número de teléfono">
+                        </div>
+                        <div class="required-fields">
+                            Porfavor llene todos los campos
+                        </div>
+                        <div class="input-wrap">
+                            <button class="btn alert-btn">Obtenga acceso ahora*</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container flex space-between">
+                <p class="footer-copy">
+                    SmartMinds © <span class="year"></span>. All rights reserved.
+                </p>
+                <div class="footer-policies">
+                    <a href="javascript:void(0)" data-name="terms" class="alterlink">Términos de Uso</a>
+                    <a href="javascript:void(0)" data-name="policy" class="alterlink">Política de privacidad</a>
+                </div>
+            </div>
+        </footer>
+        <div class="action-block flex align-center center" onclick="scrollToElem('.section-lower-form')">
+            <span>Haz clic aquí para cambiar tu vida hoy</span>
+            <img src="assets/img/svg/arrow.svg" alt="arrow" class="action-arrow" loading="lazy">
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
